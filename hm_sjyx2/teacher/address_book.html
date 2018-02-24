@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>尚景云校</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="../css/swiper-3.2.5.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">  
+    <link rel="stylesheet" type="text/css" href="../assets/css/sjyx.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/hm_sjyx.css">
+    
+  </head>
+  <body>
+    <div class="page-group" >
+        <div class="page"  >
+            <!-- 标题栏 -->
+            <header class="bar bar-nav">
+                <a class="button button-link button-nav pull-left icon-back back" href="#"></a>
+                <h1 class="title">通讯录</h1>
+                <a class="button pull-right ch-done-link" href="address_send_log.html">发送记录</a>
+            </header>
+
+            <div class="content" >
+                <div class="buttons-tab book-tab">
+                    <a href="#tab1" class="tab-link active button">全部学生</a>
+                    <a href="#tab2" class="tab-link button">全部老师</a>
+                </div>
+                <div>
+                    <div class="tabs">
+                        <div id="tab1" class="tab active"> 
+                            <div class="swiper-container tab-slider ch-tab-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a class="active" href="#" >一年级一班</a></div>
+                                    <div class="swiper-slide"><a href="#">一年级一班</a></div>
+                                    <div class="swiper-slide"><a href="#" >一年级一班</a></div>
+                                    <div class="swiper-slide"><a href="#">一年级一班</a></div>
+                                    <div class="swiper-slide"><a href="#">一年级一班</a></div>
+                                </div>
+                            </div> 
+                            <ul class="search-content tab-content ch-tab-content">
+                                <li class="clearfix">
+                                    <div class="pull-left">
+                                        <img src="../assets/images/content-4.jpg">
+                                    </div>
+                                    <div class="ch-tab-right">
+                                        <h2><b>张蓓蓓</b></h2>
+                                        <p>15689897575</p>
+                                    </div>
+                                    <input type="checkbox" class="mt check-one" />
+                                    <i class="icon-send"></i>
+                                </li> 
+                                <li class="clearfix">
+                                    <div class="pull-left">
+                                        <img src="../assets/images/content-4.jpg">
+                                    </div>
+                                    <div class="ch-tab-right">
+                                        <h2><b>张蓓蓓</b></h2>
+                                        <p>15689897575</p>
+                                    </div>
+                                    <input type="checkbox" class="mt check-one" />
+                                    <i class="icon-send"></i>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="pull-left">
+                                        <img src="../assets/images/content-4.jpg">
+                                    </div>
+                                    <div class="ch-tab-right">
+                                        <h2><b>张蓓蓓</b></h2>
+                                        <p>15689897575</p>
+                                    </div>
+                                    <input type="checkbox" class="mt check-one" />
+                                    <i class="icon-send"></i>
+                                </li>
+                            </ul>  
+                            <!-- 工具栏 -->
+                            <nav class="bar bar-tab bat-btn">
+                                <div class="ch-select-all">
+                                    <input type="checkbox" class="mt check-all" />
+                                    <span class="ch-select-text">全部选择</span>
+                                </div>    
+                                <div class="ch-sign-btn ch-btn j-confirm" data="0">确定</div>
+                                <div class="ch-sign-btn ch-btn j-send" data="0">群发通知</div> 
+                            </nav>
+                        </div>
+                        <div id="tab2" class="tab">                        
+                            <ul class="search-content tab-content teacher-tab">
+                                <li class="clearfix">
+                                    <div class="pull-left">
+                                        <img src="../assets/images/content-4.jpg">
+                                        <span>曹学东</span>
+                                        <b>语文老师</b>
+                                    </div>
+                                    <p class="pull-right">15689897575</p>
+                                </li> 
+                                <li class="clearfix">
+                                    <div class="pull-left">
+                                        <img src="../assets/images/content-4.jpg">
+                                        <span>曹学东</span>
+                                        <b>语文老师</b>
+                                    </div>
+                                    <p class="pull-right">15689897575</p>
+                                </li> 
+                                <li class="clearfix">
+                                    <div class="pull-left">
+                                        <img src="../assets/images/content-4.jpg">
+                                        <span>曹学东</span>
+                                        <b>语文老师</b>
+                                    </div>
+                                    <p class="pull-right">15689897575</p>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type="text/javascript">
+        $(function() {
+           $(".swiper-container").swiper({
+                slidesPerView : 3
+           });
+
+
+           $('.check-one').hide(); 
+
+             // 点击编辑，出现checkbox
+            $('.j-send').on('click',function(){
+                var data = parseInt($(this).attr('data'));
+                if(data === 0) {
+                    $('.check-one').show(); 
+                    $('.ch-tab-content').addClass('active');
+                    $(this).parent().addClass('active');
+                    $(this).html('取消');
+                    $(this).attr('data', 1);
+                } else {
+                    $('.check-one').hide();
+                    $('.ch-tab-content').removeClass('active');
+                    $(this).parent().removeClass('active');
+                    $(this).html('群发通知');
+                    $(this).attr('data', 0);
+                }
+            });
+
+            // 点击确定
+            $('.j-confirm').on('click',function(){
+                
+            });
+
+             // 全选操作
+             $('.mt').each(function(){
+                $(this).click(function(){
+                   if($(this).hasClass('check-all')){
+                      $('.check-one').prop('checked',this.checked);
+                   }else if(!this.checked){
+                      $('.check-all').prop('checked',false);
+                   }
+                   allTotal();
+                });  
+             });
+
+
+        });
+   
+    </script>
+  </body>
+</html>

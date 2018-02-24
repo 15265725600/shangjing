@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>尚景云校</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/sjyx.css">
+  </head>
+  <body>
+    <div class="page-group" >
+        <div class="page" >
+            <!-- 标题栏 -->
+            <header class="bar bar-nav">
+                <a class="button button-link button-nav pull-left icon-back back" href="#"></a>
+                <h1 class="title">请假详情</h1>
+            </header> 
+
+            <div class="content content-padded" >
+                <div class="leave-content">
+                  <div class="leave-person clearfix">
+                      <img src="../assets/images/content-4.jpg">
+                      <h1 class="student-name">橙喵喵<span class="passing">审批中</span></h1>
+                  </div>
+                  <div class="leave-time clearfix">
+                    <h1>请假时间</h1>
+                    <div class="leave-time-spe">
+                        <div>
+                            <label>起：</label>
+                            <time>2015-9-12 9:30</time >
+                        </div>
+                        <div style="border-top: none;">
+                            <label>止：</label>
+                            <time>2015-11-12 14:30</time>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="leave-type">
+                      <h1>请假类型 <span>病假</span></h1>
+                  </div>
+                  <div class="leave-reason">
+                      <h1>请假事由</h1>
+                      <p>身体不舒服，去医院看病。身体不舒服，去医院看 病。身体不舒服，去医院看病。身体不舒服，去医 院看病。身体不舒服，去医院看病。身身体不舒服，去医院看病。身体不舒服，去医院看 病。身体不舒服，去医院看病。身体不舒服，去医 院看病。身体不舒服，去医院看病。身</p>
+                  </div>
+                </div>
+                <div class="leave-feedback info-shadow">
+                    <div class="clearfix">
+                        <h1 class="pull-left">是否通过</h1>
+                        <ul class="list-block pass-check clearfix">
+                          <li>
+                              <label class="label-checkbox item-content">
+                                  <input type="radio" name="my-radio">
+                                  <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                                  <div class="item-inner ">
+                                    <div class="item-title-row">
+                                     通过
+                                    </div>
+                                  </div>
+                              </label>
+                          </li>
+                          <li>
+                              <label class="label-checkbox item-content">
+                                  <input type="radio" name="my-radio">
+                                  <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                                  <div class="item-inner ">
+                                    <div class="item-title-row">
+                                     拒绝
+                                    </div>
+                                  </div>
+                              </label>
+                          </li>
+                        </ul>
+                    </div>
+                    <h1>意见和建议</h1>
+                    <textarea id="feedback-text" rows="10" placeholder="简略描写请假的事由"></textarea>
+                    <span class="word-limit">还可以输入<b id="textCount">140</b>字</span>
+                </div>
+                <div class="leave-btn">
+                    <a href="#" class="button button-big button-fill">确定</a>
+                </div>
+                  
+                
+            </div>
+
+        </div>
+    </div>
+
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='../assets/js/sjyx.js' charset='utf-8'></script>
+    <script>
+    
+      //建议描述字数限制
+      wordLimit('#feedback-text',140,'#textCount' );
+      
+    </script>
+  </body>
+</html>

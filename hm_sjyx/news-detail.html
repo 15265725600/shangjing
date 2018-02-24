@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>尚景云校</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/sjyx.css">
+  </head>
+  <body>
+    <div class="page-group" >
+        <div class="page"  style="background-color: #fff">
+            <!-- 标题栏 -->
+            <header class="bar bar-nav">
+                <a class="button button-link button-nav pull-left icon-back back" href="#"></a>
+                <h1 class="title">新闻详情</h1>
+                <a class="icon pull-right icon-link create-actions" href="#"></a>
+            </header>
+
+            <div class="content content-padded" >
+                <article class="detail-article">
+                     <h1>济南电台主持人方言走进筑基讲坛讲述与济南最初的遇见 </h1>
+                     <div class="time-sch"><time>2016-2-15</time><span>山东建筑大学</span></div>
+                     <div class="detail-content">
+                         <p>   12月10日下午，在外国语学院our咖啡馆里，一场与老济南的温暖相遇如约而至。著名电台栏目《方言客栈》主持人方言先生</p>
+                         <p>  济南电台主持人方言走进筑基讲坛讲述与济南最初的遇见 济南电台主持人方言走进筑基讲坛讲述与济南最初的遇见 济南电台主持人方言走进筑基讲坛讲述与济南最初的遇见 济南电台主持人方言走进筑基讲坛讲述与济南最初的遇见 济南电台主持人方言走进筑基讲坛讲述与济南最初的遇见 </p>
+                         <p>   12月10日下午，在外国语学院our咖啡馆里，一场与老济南的温暖相遇如约而至。著名电台栏目《方言客栈》主持人方言先生</p>
+                         <img src="assets/images/content-4.jpg">
+                         <p>   12月10日下午，在外国语学院our咖啡馆里，一场与老济南的温暖相遇如约而至。著名电台栏目《方言客栈》主持人方言先生</p>
+                         <p>   12月10日下午，在外国语学院our咖啡馆里，一场与老济南的温暖相遇如约而至。著名电台栏目《方言客栈》主持人方言先生</p>
+                     </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type="text/javascript">
+        $(document).on('click','.create-actions', function () {
+          var buttons1 = [
+            {
+              text: '<div class="news-share"><img style="" src="assets/images/friend.png"/>朋友圈</div>',
+              bold: true,
+              onClick: function() {
+                //$.alert("你选择了“卖出“");
+              }
+            }
+          ];
+          var buttons2 = [
+            {
+              text: '取消',
+              bg: '#fff'    
+            }
+          ];
+          var groups = [buttons1, buttons2];
+          $.actions(groups);
+      });
+    </script>
+  </body>
+</html>

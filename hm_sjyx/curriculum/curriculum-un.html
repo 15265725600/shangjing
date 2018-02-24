@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>尚景云校</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/sjyx.css">
+  </head>
+  <body>
+    <div class="page-group" >
+        <div class="page"  >
+            <!-- 标题栏 -->
+            <header class="bar bar-nav" style="position: relative;">
+                <a class="button button-link button-nav pull-left icon-back back" href="#"></a>
+                <h1 class="title">课程表</h1>
+            </header>
+
+            <div class="content cur-un cur" >
+                <img src="../assets/images/book.jpg
+                ">
+                <p>您还没有课程表， 是否添加？</p>
+                <div class="leave-btn" style="margin: 0 3rem; position: relative;">
+                  <a href="javascript:void(0)" class="button button-big button-fill">添加</a>
+                  <input type="file" id="take-picture" accept="image/*">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#take-picture').on('change',function(e){
+                if (!window.FileReader) return;  
+              
+                var files = e.target.files;  
+                var content = '';
+                var j = 0;
+                for (var i = 0, f; f = files[i]; i++) {  
+                
+                    if (!f.type.match('image.*')) {  
+                        alert('文件'+ f.name + '不是图片') 
+                        continue;   
+                    }   
+                    var reader = new FileReader();  
+                    
+                    reader.onload = function(e){
+                        content = '<img width="90%" src="'+ e.target.result +'"/>';
+                        j++;
+                        $('.cur-un').html(content);                        
+                    } 
+                    reader.readAsDataURL(f); 
+                }            
+            });
+
+
+        });
+    </script>
+  </body>
+</html>

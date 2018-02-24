@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>尚景云校</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/sjyx.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/hm_sjyx.css">
+  </head>
+  <body>
+    <div class="page-group" >
+        <div class="page">
+            <!-- 标题栏 -->
+            <header class="bar bar-nav">
+                <a class="button button-link button-nav pull-left icon-back back" href="#"></a>
+                <h1 class="title">平安校园</h1>
+            </header>
+
+            <div class="content " >
+                <div class="buttons-tab book-tab">
+                    <a href="#tab1" class="tab-link active button">到家签到</a>
+                    <a href="#tab2" class="tab-link button">学校签到</a>
+                </div>
+                <div>
+                    <div class="tabs">
+                        <div id="tab1" class="tab active">  
+                            <div class="list-block ch-save-wrap">
+                                <div class="ch-sign-btn" data="0"><i class="icon-home"></i><span>到家签到</span></div>
+                                
+                                <div class="info-shadow leave-item">
+                                    <div class="item-time">2017-05-23 06:00 <i class="icon-calendar"></i></div>
+                                    <div class="item-reason"><i class="icon-addr"></i>高新区新东方花园西区</div>
+                                </div>
+                            </div>          
+                        </div>
+                        <div id="tab2" class="tab">
+                            <div class="list-block ch-save-wrap">                                
+                                <div class="info-shadow leave-item">
+                                    <div class="item-time"><i class="icon-addr"></i>2017-05-23 </div>
+                                    <div class="item-reason"> 
+                                        <span class="ch-state">到校</span>
+                                        <b class="time">08:00</b>
+                                        <i class="line"></i>
+                                        <span class="ch-state active">离校</span>
+                                        <b class="time">17:00</b>
+                                    </div>
+                                </div>
+                                <div class="info-shadow leave-item">
+                                    <div class="item-time"><i class="icon-addr"></i>2017-05-23</div>
+                                    <div class="item-reason"><span class="ch-state">到校</span></div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type="text/javascript" src="../assets/js/sjyx.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.ch-sign-btn').on('click', function(){
+                var data = parseInt($(this).attr('data'));
+                if(data === 0) {
+                  $(this).addClass('active');
+                  $(this).find('span').html('已签到');
+                  $(this).attr('data', 1);
+                } 
+            });
+        });
+    </script>
+  </body>
